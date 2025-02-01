@@ -160,6 +160,13 @@ a:active {
 
 /* Giao diện cho màn hình nhỏ (Mobile, nhỏ hơn 768px) */
 @media (max-width: 768px) {
+html{
+    font-size: 16px;
+  
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
     #day, #new, #search {
         position: static;
         margin: 1rem auto;
@@ -179,7 +186,7 @@ a:active {
 #anhBV
 {
     position: relative;
-    width: 20rem ;
+    width: 28rem ;
     margin: 0;
 }
 #chu
