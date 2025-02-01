@@ -1,0 +1,118 @@
+html{
+    font-size: 16px;
+  
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+body
+{
+    font-family: 'Oswald';
+    line-height: 1; /* Giảm khoảng cách giữa các dòng */
+    margin: 0;
+    padding: 0;
+}
+
+svg
+{
+    width: 1rem;
+    height: 1rem;
+    color: black; /* Hoặc bất kỳ màu nào bạn muốn */
+}
+
+#bottom
+{
+    text-align: center;
+    font-weight: 600;
+    background-color: rgb(197, 193, 190);
+    line-height: 2rem;
+    margin-top: 50rem;
+}
+
+#day
+{
+    
+    position: absolute;
+    
+    left: 40rem;
+    top: 0;
+    width: 3rem;
+}
+#anh
+{
+   
+    margin-left: 29rem;
+ 
+}
+
+#new
+{
+    position: absolute;
+    
+    right: 40rem;
+    top: 1rem;
+    
+   
+}
+.top
+{
+    position: relative;
+    border-bottom: 1px solid rgb(156, 155, 155); /* Thay đổi giá trị để điều chỉnh độ dày và màu sắc */  
+    padding-bottom: 0; /* Khoảng cách giữa tiêu đề và đường line */  
+  
+}  
+
+#search
+{
+    position: absolute;
+    right: 30rem;
+    top: 2.1rem;
+}
+
+a {
+    color: rgb(156, 155, 155); /* Màu chữ của đường link */
+    text-decoration: none; /* Loại bỏ gạch chân nếu cần */
+}
+
+a:visited {
+    color: rgb(156, 155, 155); /* Màu chữ của đường link khi đã ghé thăm */
+}
+
+a:hover {
+    color: black; /* Màu chữ khi di chuột vào */
+  
+}
+
+a:active {
+    color: rgb(156, 155, 155); /* Màu chữ khi đường link được bấm */
+}
+
+#home
+{
+    margin-left: 20rem;
+    margin-top: 0.5rem;
+}
+
+.mid
+{
+    border-bottom: 1px solid rgb(156, 155, 155); /* Thay đổi giá trị để điều chỉnh độ dày và màu sắc */  
+    padding-bottom: 0.5rem; /* Khoảng cách giữa tiêu đề và đường line */  
+}
+
+#NDC
+{
+    position: absolute;
+    margin-left: 30rem;
+    margin-top: 1rem;
+}
+.main
+{
+    position: relative;
+}
+
+#chu
+{
+    position: absolute;
+    width: 40rem;
+    left: 38rem;
+    font-size: 2rem;
+}
