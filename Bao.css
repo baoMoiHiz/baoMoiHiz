@@ -116,3 +116,138 @@ a:active {
     left: 38rem;
     font-size: 2rem;
 }
+
+/* Giao diện cho màn hình trung bình (Tablet, từ 768px đến 1024px) */
+@media (max-width: 1024px) and (min-width: 768px) {
+    #day, #new, #search {
+        position: static; /* Đưa về vị trí mặc định */
+        margin: 1rem auto; /* Căn giữa và tạo khoảng cách */
+        text-align: center;
+    }
+
+    #anh {
+        margin-left: auto;
+        margin-right: auto;
+        display: block; /* Căn giữa hình ảnh */
+    }
+
+    #home {
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center; /* Căn giữa nút Home */
+    }
+
+    #chu {
+        width: 90%; /* Thu hẹp nội dung */
+        left: 5%; /* Căn giữa nội dung */
+        font-size: 1.5rem; /* Giảm kích thước font chữ */
+    }
+
+    #NDC {
+        margin-left: 5%;
+        margin-top: 2rem;
+        position: relative; /* Đổi vị trí để phù hợp với màn hình nhỏ hơn */
+    }
+
+    #bottom {
+        margin-top: 5rem; /* Thu gọn khoảng cách */
+    }
+
+    body {
+        font-size: 14px; /* Giảm kích thước chữ */
+    }
+}
+
+/* Giao diện cho màn hình nhỏ (Mobile, nhỏ hơn 768px) */
+@media (max-width: 767px) {
+    #day, #new, #search {
+        position: static;
+        margin: 1rem auto;
+        text-align: center;
+        font-size: 0.9rem; /* Giảm kích thước chữ */
+    }
+.main
+{
+    position: relative;
+}
+    #day
+    {
+       
+        margin-left: 25rem;
+        margin-top: -6rem;
+    }
+#anhBV
+{
+    position: relative;
+    width: 100%;
+    margin: 0;
+}
+#chu
+{
+    text-indent: 5rem; /* Thụt đầu dòng 2rem */
+    text-align: justify; /* Căn đều văn bản */
+    line-height: 2rem; /* khoảng cách dòng chữ */
+    font-size: 2rem;
+    position: relative;
+    top: 1rem;
+    bottom: 1rem;
+    right: 1rem;
+    left: 1rem;
+}
+    #anh {
+        margin: 1rem auto;
+        display: block;
+        width: 80%; /* Thu nhỏ hình ảnh */
+    }
+
+    #home {
+        margin: 0.3rem auto;
+        margin-left: 1rem;
+    }
+.mid{
+    padding-bottom: 0rem ;
+}
+#new
+{
+    bottom: 1rem;
+    margin-left: 24rem;
+    font-size: 1.5rem;
+    margin-bottom: -2rem;
+    
+}
+.top
+{
+    position: static;
+    
+}
+#search
+{
+    margin-top: 2rem;
+    margin-right: 16rem;
+    font-size: 2rem;
+}
+    #chu {
+        width: 95%;
+        left: 2.5%;
+        font-size: 1.2rem; /* Giảm font chữ cho màn hình nhỏ */
+    }
+
+    #NDC {
+        margin: 2rem auto;
+        position: relative;
+        text-align: center;
+    }
+  
+    .main {
+        padding: 1rem; /* Thêm khoảng cách padding cho nội dung */
+    }
+
+    body {
+        font-size: 12px; /* Thu nhỏ kích thước chữ */
+    }
+
+    #bottom {
+        margin-top: 2rem;
+        font-size: 0.8rem; /* Thu nhỏ kích thước chữ ở phần cuối trang */
+    }
+}
