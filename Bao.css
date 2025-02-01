@@ -159,7 +159,7 @@ a:active {
 }
 
 /* Giao diện cho màn hình nhỏ (Mobile, nhỏ hơn 768px) */
-@media (max-width: 767px) {
+@media (max-width: 768px) {
     #day, #new, #search {
         position: static;
         margin: 1rem auto;
