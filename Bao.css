@@ -201,6 +201,21 @@ html{
 }
 #day
 {
-    left: 24rem;
+    left: 23rem;
+}
+#search
+{
+    left: 1rem;
+    margin-top: -2rem;
+    position: relative;
+}
+#lup
+{
+    margin-left: 0.5rem;
+    margin-top: -4rem;
+}
+#home
+{
+    margin-left: 1rem;
 }
 }
