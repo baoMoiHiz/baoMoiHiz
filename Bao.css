@@ -161,104 +161,46 @@ a:active {
 /* Giao diện cho màn hình nhỏ (Mobile, nhỏ hơn 768px) */
 @media (max-width: 768px) {
 html{
-    font-size: 16px;
-  
-    background-size: cover;
-    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
 }
-
-    #day, #new, #search {
-        position: static;
-        margin: 1rem auto;
-        text-align: center;
-        font-size: 0.9rem; /* Giảm kích thước chữ */
-    }
-.main
-{
+.main{
     position: relative;
+    
 }
-    #day
-    {
-       
-        margin-left: 25rem;
-        margin-top: -6rem;
-    }
-#anhBV
-{
-      position: relative;
-    margin: 1rem auto; /* Căn giữa ảnh */
-    display: block;
-    max-width: 100%; /* Đảm bảo chiều rộng ảnh không vượt quá khung */
-    height: auto; /* Giữ nguyên tỷ lệ ảnh */
-    object-fit: cover; /* Điều chỉnh ảnh để phù hợp với khung */
-    text-align: center; /* Đảm bảo căn giữa trong khung */
+#anhBV {
+    position: absolute;
+    max-width: 100%; /* Đảm bảo ảnh không vượt khung */
+    margin: 0 auto; /* Căn giữa */
 }
 #chu
 {
-    text-indent: 5rem; /* Thụt đầu dòng 2rem */
-    text-align: justify; /* Căn đều văn bản */
-    line-height: 2rem; /* khoảng cách dòng chữ */
-    font-size: 2rem;
-    position: relative;
-    top: 1rem;
-    bottom: 1rem;
-    right: 1rem;
-    left: 1rem;
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    margin-left: -38rem;
+    font-size: 1rem;
+    margin-top: 15rem;
+    width: 25rem;
 }
-    #anh {
-        margin: 1rem auto;
-        display: block;
-        width: 80%; /* Thu nhỏ hình ảnh */
-    }
-
-    #home {
-        margin: 0.3rem auto;
-        margin-left: 1rem;
-    }
-.mid{
-    padding-bottom: 0rem ;
-}
-#new
-{
-    bottom: 1rem;
-    margin-left: 24rem;
-    font-size: 1.5rem;
-    margin-bottom: -2rem;
-    
+#NDC {
+    width: 25rem; /* Thu nhỏ nội dung thêm chút nữa */
+    font-size: 0.9rem; /* Giảm kích thước chữ */
+    line-height: 1.5rem; /* Thu gọn khoảng cách dòng */
+    margin-left: 1rem;
 }
 .top
 {
-    position: static;
-    
+    position: relative;
+    padding-bottom: 3rem;
 }
-#search
+#anh
 {
-    margin-top: 2rem;
-    margin-right: 16rem;
-    font-size: 2rem;
+    
+    margin-left: 1rem;
 }
-    #chu {
-        width: 95%;
-        left: 2.5%;
-        font-size: 1.2rem; /* Giảm font chữ cho màn hình nhỏ */
-    }
-
-    #NDC {
-        margin: 2rem auto;
-        position: relative;
-        text-align: center;
-    }
-  
-    .main {
-        padding: 1rem; /* Thêm khoảng cách padding cho nội dung */
-    }
-
-    body {
-        font-size: 12px; /* Thu nhỏ kích thước chữ */
-    }
-
-    #bottom {
-        margin-top: 2rem;
-        font-size: 0.8rem; /* Thu nhỏ kích thước chữ ở phần cuối trang */
-    }
+#day
+{
+    left: 24rem;
+}
 }
