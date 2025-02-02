@@ -185,10 +185,13 @@ html{
     }
 #anhBV
 {
-    position: relative;
-    width: 28rem ;
-    margin: 0;
-    text-align: center;
+      position: relative;
+    margin: 1rem auto; /* Căn giữa ảnh */
+    display: block;
+    max-width: 100%; /* Đảm bảo chiều rộng ảnh không vượt quá khung */
+    height: auto; /* Giữ nguyên tỷ lệ ảnh */
+    object-fit: cover; /* Điều chỉnh ảnh để phù hợp với khung */
+    text-align: center; /* Đảm bảo căn giữa trong khung */
 }
 #chu
 {
