@@ -1,6 +1,7 @@
 html{
     font-size: 16px;
-  
+    margin: 0;
+    padding: 0;
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -18,14 +19,22 @@ svg
     height: 1rem;
     color: black; /* Hoặc bất kỳ màu nào bạn muốn */
 }
-
+.bot
+{
+    position: relative;
+}
 #bottom
 {
+    position: absolute;
     text-align: center;
     font-weight: 600;
     background-color: rgb(197, 193, 190);
     line-height: 2rem;
-    margin-top: 50rem;
+    margin-top: 100%;
+    
+    width: 100%;
+    
+    
 }
 
 #day
@@ -33,39 +42,65 @@ svg
     
     position: absolute;
     
-    left: 40rem;
-    top: 0;
-    width: 3rem;
+    left: 45rem ;
+    top: 1rem ;
+    
+    width: 6rem ;
 }
 #anh
 {
-   
+    position: absolute;
     margin-left: 29rem;
- 
+    
 }
-
+#anhBV
+{
+    width: 60rem;
+}
+#chu
+{
+    margin-left: 33rem;
+    line-height: 3rem;
+}
 #new
 {
-    position: absolute;
-    
-    right: 40rem;
-    top: 1rem;
-    
+   position: absolute;
+   right: 30rem;
+   top: 5rem;
+   font-size: 2rem;
+   padding: 0;
    
 }
 .top
 {
     position: relative;
-    border-bottom: 1px solid rgb(156, 155, 155); /* Thay đổi giá trị để điều chỉnh độ dày và màu sắc */  
-    padding-bottom: 0; /* Khoảng cách giữa tiêu đề và đường line */  
+  
   
 }  
+.top::after
+{
+    content: "";
+    border-bottom: 1px solid rgb(156, 155, 155); /* Thay đổi giá trị để điều chỉnh độ dày và màu sắc */  
+    padding-bottom: 5rem; /* Khoảng cách giữa tiêu đề và đường line */  
+    padding: 6rem 100%;
+    
+    top: 5rem;
+}
 
+.mid::before
+{
+    content: "";
+    border-bottom: 1px solid rgb(156, 155, 155); /* Thay đổi giá trị để điều chỉnh độ dày và màu sắc */  
+    padding-bottom: 0; /* Khoảng cách giữa tiêu đề và đường line */  
+    padding: 8rem 100%;
+  
+} 
 #search
 {
     position: absolute;
     right: 30rem;
     top: 2.1rem;
+    
 }
 
 a {
@@ -85,24 +120,25 @@ a:hover {
 a:active {
     color: rgb(156, 155, 155); /* Màu chữ khi đường link được bấm */
 }
-
-#home
-{
-    margin-left: 20rem;
-    margin-top: 0.5rem;
-}
-
 .mid
 {
-    border-bottom: 1px solid rgb(156, 155, 155); /* Thay đổi giá trị để điều chỉnh độ dày và màu sắc */  
-    padding-bottom: 0.5rem; /* Khoảng cách giữa tiêu đề và đường line */  
+    position: relative;
 }
+#home
+{
+    position: absolute;
+    margin-left: 20rem;
+    margin-top: 6rem;
+}
+
+
 
 #NDC
 {
+    
     position: absolute;
     margin-left: 30rem;
-    margin-top: 1rem;
+    margin-top: 10rem;
 }
 .main
 {
@@ -111,10 +147,12 @@ a:active {
 
 #chu
 {
+
     position: absolute;
     width: 40rem;
-    left: 38rem;
+    left: 29rem;
     font-size: 2rem;
+    text-align: justify; /* Căn đều văn bản */
 }
 
 /* Giao diện cho màn hình trung bình (Tablet, từ 768px đến 1024px) */
@@ -160,62 +198,94 @@ a:active {
 
 /* Giao diện cho màn hình nhỏ (Mobile, nhỏ hơn 768px) */
 @media (max-width: 768px) {
-html{
-    margin: 0;
-    padding: 0;
-}
-.main{
-    position: relative;
+
+    .top
+    {
+        position: relative;
+    }
     
-}
-#anhBV {
-    position: absolute;
-    max-width: 100%; /* Đảm bảo ảnh không vượt khung */
-    margin: 0 auto; /* Căn giữa */
-}
-#chu
-{
-    position: absolute;
-    margin: 0;
-    padding: 0;
-    margin-left: -38rem;
-    font-size: 1rem;
-    margin-top: 15rem;
-    width: 25rem;
-}
-#NDC {
-    width: 25rem; /* Thu nhỏ nội dung thêm chút nữa */
-    font-size: 0.9rem; /* Giảm kích thước chữ */
-    line-height: 1.5rem; /* Thu gọn khoảng cách dòng */
-    margin-left: 1rem;
-}
-.top
-{
-    position: relative;
-    padding-bottom: 3rem;
-}
-#anh
-{
+    #anh
+    {
+        position: absolute;
+        margin: 0;
+        padding: 0;
+    }
+
+    #day
+    {
+        position: absolute;
+        margin-left: -15rem;
+    }
+
+    #search
+    {
+        position: absolute;
+        left: 0.5rem;
+        top: 5rem;
+    }
+
+    #lup
+    {
+        position: absolute;
+        left: 12rem;
+        top: 0rem;
+    }
     
-    margin-left: 1rem;
-}
-#day
-{
-    left: 23rem;
-}
-#search
-{
-    left: 1rem;
-    margin-top: -2rem;
-    position: relative;
-}
-#lup
-{
-    margin-left: 0.5rem;
-    margin-top: -4rem;
-}
-#home
-{
-    margin-left: 1rem;
-}
+    #new
+    {
+        position: absolute;
+        left: 30rem;
+        top: 5rem;
+        font-size: 1.5rem;
+        width: 100%;
+    }
+
+    .mid
+    {
+        position: relative;
+    }
+
+    #home
+    {
+        position: absolute;
+        left: -18rem;
+    }
+
+    .main{
+        position: relative;
+        
+    }
+    #NDC
+    {
+        position: absolute;
+        left: -28rem;
+        width: 100%;
+        
+    }
+
+    #anhBV
+    {
+        position: absolute;
+        width: 100%;
+    }
+
+    #chu
+    {
+        position: absolute;
+        width: 100%;
+        left: -33rem;
+        top: 15rem;
+    }
+
+    .bot{
+        position: relative;
+    }
+
+    #bottom
+    {
+        position: absolute;
+        top: 100rem;
+        width: 100%;
+    }
+
 }
